@@ -1,6 +1,7 @@
 /*
 Covid 19 Data Exploration 
 Skills used: Joins, CTE's, Temp Tables, Windows Functions, Aggregate Functions, Creating Views, Converting Data Types
+Visualization of the project is available at: https://public.tableau.com/app/profile/estera.wisniewska/viz/Coviddashboard_16607712481380/Dashboard1
 */
 
 Select *
@@ -145,6 +146,8 @@ From #PercentPopulationVaccinated
 
 
 -- Creating View to store data for later visualizations
+-- visualization is available at:
+-- https://public.tableau.com/app/profile/estera.wisniewska/viz/Coviddashboard_16607712481380/Dashboard1
 
 Create View PercentPopulationVaccinated as
 Select dea.continent, dea.location, dea.date, dea.population, vac.new_vaccinations
